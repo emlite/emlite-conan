@@ -33,14 +33,14 @@ Then you can use conan as you would normally do, and pass a `-pr:emscripten` pro
 
 For example:
 ```bash
-conan install --requires=wasmbind/0.1.1 -o wasmbind/*:webbind=True -r=emlite-conan --build=missing -pr=emscripten
+conan install --requires=wasmbind/0.1.3 -o wasmbind/*:webbind=True -r=emlite-conan --build=missing -pr=emscripten
 ```
 Will install wasmbind along with the webbind feature to your local conan cache.
 
 To use it in a conan project, you can add the dependency to wasmbind in your conanfile.txt:
 ```ini
 [requires]
-wasmbind/0.1.1
+wasmbind/0.1.3
 
 [options]
 wasmbind/*:webbind=True
