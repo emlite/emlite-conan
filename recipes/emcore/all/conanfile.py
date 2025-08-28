@@ -9,7 +9,7 @@ required_conan_version = ">=2.0"
 
 class EmcoreConan(ConanFile):
     name = "emcore"
-    version = "0.1.0"
+    version = "0.1.1"
     license = "MIT"
     url = "https://github.com/emlite/emcore"
     homepage = "https://github.com/emlite/emcore"

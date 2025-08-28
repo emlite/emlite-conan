@@ -9,7 +9,7 @@ required_conan_version = ">=2.0"
 
 class WasmbindConan(ConanFile):
     name = "wasmbind"
-    version = "0.1.3"
+    version = "0.1.4"
     license = "MIT"
     url = "https://github.com/emlite/wasmbind"
     homepage = "https://github.com/emlite/wasmbind"
@@ -41,8 +41,8 @@ class WasmbindConan(ConanFile):
         cmake_layout(self, src_folder=".")
 
     def requirements(self):
-        self.requires("emcore/0.1.0")
-        self.requires("emlite/0.1.3")
+        self.requires("emcore/0.1.1")
+        self.requires("emlite/0.1.4")
 
     def source(self):
         git = Git(self)

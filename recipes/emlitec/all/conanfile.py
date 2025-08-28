@@ -9,7 +9,7 @@ required_conan_version = ">=2.0"
 
 class EmlitecConan(ConanFile):
     name = "emlitec"
-    version = "0.1.0"
+    version = "0.1.3"
     license = "MIT"
     url = "https://github.com/emlite/emlitec"
     homepage = "https://github.com/emlite/emlitec"
@@ -40,7 +40,7 @@ class EmlitecConan(ConanFile):
 
     def requirements(self):
         if str(self.settings.get_safe("os")) == "Emscripten":
-            self.requires("emcore/0.1.0")
+            self.requires("emcore/0.1.1")
 
     def source(self):
         git = Git(self)
